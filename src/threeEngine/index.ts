@@ -5,6 +5,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import * as Camera from './camera';
 import * as Model from './model';
+import * as Public from './public';
 
 class ThreeEngine {
     public scene: Scene | null = null;
@@ -59,6 +60,7 @@ class ThreeEngine {
     // 各功能模块命名空间导出
     public Camera = Camera;
     public Model = Model;
+    public Public = Public;
 }
 
 export default new ThreeEngine();

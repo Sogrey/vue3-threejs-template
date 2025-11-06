@@ -44,6 +44,7 @@ onUnmounted(() => {
 const init = async (viewId: string) => {
 
   let scene = Engine.init(viewId)
+  Engine.Public.addAxesHelper(scene)
   Engine.Model.loadTestModel(scene)
 
 }
